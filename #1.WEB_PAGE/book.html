@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+    <title>JuicyJerry's JavaScript</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src='colors.js'></script>
+</head>
+<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style>
+<body>
+    <h1><a href="index.html">WEB</a></h1>
+    <input id="night_day" type="button" value="night" onclick="nightDayHandler(this);">
+    <div id="grid">
+    <ol>
+        <li><a href="1.html">HTML<br></a></li>
+        <li><a href="2.html">CSS<br></a></li>
+        <li><a href="3.html">JavaScript</a></li>
+        <li><a href="book.html">Book</a></li>
+    </ol>
+    <div id="article">
+        <h2>JuicyJerry's Book</h2>
+        <img src="os가보이는그림책.jpg" width="300px">
+        <h2>#1. OS가 보이는 그림책</h2>
+        <h3>OS가 보이는 그림책, ANK Co.. Ltd. 저 | 이영란 역, 성안당</h3>
+        <h4>제0장 OS 학습을 시작하기 전에</h4>
+        <p>
+            OS란, Operating System의 약자입니다. OS는 컴퓨터를 관리하고 제어하며 작동시키기 위한 토대를 만드는 소프트웨어를 말합니다. 이를 ‘기본 소프트웨어’라고 부르기도 합니다.<br><br>
+            
+            <strong>대표적인 OS</strong><br> 
+            <li>Windows: Microsoft사가 1985년부터 릴리즈한 OS로 PC용, 서버용, 임베디드 기기용 등이 있으며 개인이나 비즈니스 이용자를 중심으로 보급되어 있다.</li><br><br>
+            <li>UNIX: 미국의 AT&T사의 벨 연구소에서 개발한 OS로, OS를 판매하여 수익을 얻고자 하는 사람들과 무상으로 제공하려는 사람들로 나뉘어 꾸준히 개발되어 오고 있다.</li><br><br> 
+            <li>Max OS: Apple사가 자사의 Macintosh 컴퓨터용으로 개발한 OS입니다. CUI에서 GUI로의 시대를 여는 데 많은 공헌을 하였다.</li><br><br> 
+            <img src="os_type.png" width="300px" class="center">
+        </p>
+        <p>         
+            <strong>하드웨어와 소프트웨어</strong><br> 
+            하드웨어란, 컴퓨터에 사용되는 부품이나 그것들을 조합한 기기를 말합니다.<br> 
+            소프트웨어는 하드웨어를 작동하기 위해서 어떤 처리를, 어떤 순서로 수행하게 할 것인지에 대한 명령을 내리는 것입니다. 소프트웨어는 크게 OS(기본 소프트웨어)와 어플리케이션 소프트웨어(응용 프로그램)로 나뉜다<br><br> 
+            <img src="computer_system.jpg" width="300px" class="center">
+        </p> 
+        <p>
+            <strong>OS의 역할</strong><br>
+            프로세스 관리(프로그램의 실행 단위인 프로세스를 관리), 메모리 관리(프로그램에 메인 메모리를 할당하거나 해체, 가상 메모리 관리 수행), 디스크 관리(보조 기억 장치에 파일을 기록, 장치에 기록된 파일을 읽어들임), 네트워크 관리(통신 장비나 네트워크를 제어, 관리)
+        </p> 
+        <p>
+            <strong>컴퓨터를 구성하는 주요 부품</strong><br>
+            OS는 컴퓨터의 하드웨어와 소프트웨어(어플리케이션)를 모두 관리합니다. <br>
+            <li>마더보드: CPU나 메모리, 하드디스크 등 컴퓨터를 구성하는 부품을 접속하고 데이터 처리와 부품의 제어를 수행하는 기판</li><br>
+                <li>CPU: 컴퓨터의 작동을 제어하거나 연산 처리를 수행하는 장치로, 중앙 연산 처리 장치라고도 하며 인간의 뇌에 해당하며. 열이 발생하므로 냉각용 쿨러 밑에 장착</li><br>
+
+                <li>메모리: 입력된 명령이나 프로그램, 데이터, 처리한 결과 등을 일시적으로 기억하는 장치로, 메인 메모리 또는 주기억장치라고 하며 메모리에 기억된 정보는 컴퓨터의 전원을 끄면 사라짐</li><br>
+
+                <li>BIOS: 컴퓨터에 접속된 기기를 제어히는 프로그램군</li><br>
+
+                <li>칩셋: CPU나 메모리, 하드디스크 등과 같은 각 부품이 주고받는 데이터의 흐름을 관리</li><br>
+
+                <li>하드디스크: 대용량 기억 장치로, 보조 기억 장치 또는 외부 기억 장치라고 함 메인 메모리와 다르게 컴퓨터의 전원을 꺼도 정보가 사라지지 않음</li><br>
+
+                <li>광학 드라이브: DVD나 CD의 디스크를 읽고 쓰는 장치</li><br>
+        </p> 
+
+        <p>
+            <strong>OS는 어디에 있는 것일까?</strong><br>
+            기본적으로 OS는 하드디스크 안에 저장(설치)합니다. 외장형 하드디스크나 USB 메모리 등에 설치하여 사용하는 OS도 있지만 일반적으로 컴퓨터에 내장된 하드디스크에 설치하여 사용합니다.
+        </p> 
+        <p>
+            <strong>OS를 설치하지 않으면 어떻게 될까?</strong><br>
+            컴퓨터는 전원을 켜면 마더보드에 내장된 BIOS가 POST(Power On Self Test)라는 동작 체크를 지가한다. POST는 컴퓨터를 작동시키기 위한 자기 진단 기능으로 CPU와 메모리, 마더보드 상의 칩셋이나 컨트롤러 등 접속되어 있는 다양한 기기를 체크합니다. 기기 체크 중에 문제가 발생하면 화면에 오류 메시지가 나타납니다. OS가 없으므로 ‘Operating System Not Found’라는 메시자가 나타납니다.
+        </p>
+    </div>
+</div>
+</body>
+</html>
